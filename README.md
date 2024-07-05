@@ -1,8 +1,10 @@
-# Data-Science-for-Public-Policy
+## Data-Science-for-Public-Policy
 
-Can internet voting affect turnout? Evidence from the canton of St. Gallen
+# Can internet voting affect turnout? Evidence from the canton of St. Gallen
+
 Valeria Cerciello (23-746-282) & Tim Schäfer (20-610-937)
-Research Question & Motivation
+
+### Research Question & Motivation
 Political participation is declining in most Western Democracies which potentially undermines the le-
 gitimacy of democratic decisions. Policy makers aim to address this issue by implementing policies
 that reduce voting costs with the expectation of increasing turnout. This paper analyses the effect of
@@ -12,7 +14,8 @@ ipalities offered internet voting while the majority did not.
 Previous studies (see literature) either find no or rather low positive effects on turnout. However, we
 will use more recent election data. Since one would assume that voters are becoming more digitally
 savvy, this might lead to different estimates compared to previous research.
-Dataset
+
+### Dataset
 We will obtain most of the data from the official website of the canton of St. Gallen and the Swiss
 Federal Statistical Office. This includes PDF and CSV files on voting behaviour at municipality level.
 The dataset will allow us to examine changes in voter turnout and party shares before and after the
@@ -27,7 +30,8 @@ Possible preprocessing steps may include:
 • Normalize data where necessary, for example, converting all dates to a uniform format
 • Ensure that all municipal IDs match across different data tables if they come from multiple
 sources
-Method
+
+### Method
 The basic diff-in-diff specification is going to be: 𝑌 𝑖𝑡 = 𝛼𝑖 + 𝛾𝑡 + 𝛽𝑋𝑖𝑡 + 𝜖𝑖𝑡
 • 𝑌 𝑖𝑡 is the outcome variable (voter turnout or voter share) for municipality i at time t.
 • 𝛼𝑖 is a municipality fixed effect and 𝛾𝑡 a time fixed effect that controls for common shocks.
